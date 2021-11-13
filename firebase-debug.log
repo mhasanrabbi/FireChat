@@ -1,0 +1,126 @@
+[debug] [2021-11-13T15:01:47.492Z] ----------------------------------------------------------------------
+[debug] [2021-11-13T15:01:47.494Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\mhmmd\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init functions
+[debug] [2021-11-13T15:01:47.494Z] CLI Version:   9.22.0
+[debug] [2021-11-13T15:01:47.494Z] Platform:      win32
+[debug] [2021-11-13T15:01:47.494Z] Node Version:  v16.13.0
+[debug] [2021-11-13T15:01:47.495Z] Time:          Sat Nov 13 2021 21:01:47 GMT+0600 (Bangladesh Standard Time)
+[debug] [2021-11-13T15:01:47.496Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-11-13T15:01:47.503Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-11-13T15:01:47.504Z] > authorizing via signed-in user (mdmahmudhasanrabbi@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  F:\Rabbi\react-firechat
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2021-11-13T15:02:44.259Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-11-13T15:02:44.259Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-11-13T15:02:44.681Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sat, 13 Nov 2021 15:02:44 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"clear","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-13T15:02:44.711Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects  
+ {"projectId":"functions","name":"functions"}
+[debug] [2021-11-13T15:02:46.574Z] <<< HTTP RESPONSE 409 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Sat, 13 Nov 2021 15:02:46 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1464","alt-svc":"clear","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-13T15:02:46.575Z] <<< HTTP RESPONSE BODY {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2021-11-13T15:02:46.946Z] FirebaseError: HTTP Error: 409, Requested entity already exists
+    at module.exports (C:\Users\mhmmd\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Request._callback (C:\Users\mhmmd\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:41:35)
+    at Request.self.callback (C:\Users\mhmmd\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (node:events:390:28)
+    at Request.emit (node:domain:475:12)
+    at Request.<anonymous> (C:\Users\mhmmd\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1154:10)
+    at Request.emit (node:events:390:28)
+    at Request.emit (node:domain:475:12)
+    at IncomingMessage.<anonymous> (C:\Users\mhmmd\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1076:12)
+    at Object.onceWrapper (node:events:509:28)
+    at IncomingMessage.emit (node:events:402:35)
+    at IncomingMessage.emit (node:domain:475:12)
+    at endReadableNT (node:internal/streams/readable:1343:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID functions. Please try again with a unique project ID.
+[debug] [2021-11-13T15:02:57.127Z] ----------------------------------------------------------------------
+[debug] [2021-11-13T15:02:57.131Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\mhmmd\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init functions
+[debug] [2021-11-13T15:02:57.131Z] CLI Version:   9.22.0
+[debug] [2021-11-13T15:02:57.131Z] Platform:      win32
+[debug] [2021-11-13T15:02:57.131Z] Node Version:  v16.13.0
+[debug] [2021-11-13T15:02:57.132Z] Time:          Sat Nov 13 2021 21:02:57 GMT+0600 (Bangladesh Standard Time)
+[debug] [2021-11-13T15:02:57.132Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-11-13T15:02:57.140Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-11-13T15:02:57.141Z] > authorizing via signed-in user (mdmahmudhasanrabbi@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  F:\Rabbi\react-firechat
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-11-13T15:03:04.767Z] > refreshing access token with scopes: []
+[debug] [2021-11-13T15:03:04.768Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-11-13T15:03:05.153Z] <<< HTTP RESPONSE 200 {"date":"Sat, 13 Nov 2021 15:03:05 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"clear","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-13T15:03:05.204Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2021-11-13T15:03:06.207Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2021-11-13T15:03:06.208Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2021-11-13T15:03:18.524Z] ----------------------------------------------------------------------
+[debug] [2021-11-13T15:03:18.526Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\mhmmd\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init functions
+[debug] [2021-11-13T15:03:18.526Z] CLI Version:   9.22.0
+[debug] [2021-11-13T15:03:18.526Z] Platform:      win32
+[debug] [2021-11-13T15:03:18.526Z] Node Version:  v16.13.0
+[debug] [2021-11-13T15:03:18.527Z] Time:          Sat Nov 13 2021 21:03:18 GMT+0600 (Bangladesh Standard Time)
+[debug] [2021-11-13T15:03:18.527Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-11-13T15:03:18.536Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-11-13T15:03:18.536Z] > authorizing via signed-in user (mdmahmudhasanrabbi@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  F:\Rabbi\react-firechat
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] 
+=== Functions Setup
+[info] 
+[info] A functions directory will be created in your project with sample code
+[info] pre-configured. Functions can be deployed with firebase deploy.
+[info] 
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/index.js 
+[info] +  Wrote functions/.gitignore 
